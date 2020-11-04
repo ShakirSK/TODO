@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskdetailsFragment2">
+
+    <fragment
+        android:id="@+id/taskdetailsFragment2"
+        android:name="com.example.todo.tasksdetail.TaskDetailsFragment"
+        android:label="fragment_taskdetails"
+        tools:layout="@layout/fragment_taskdetails" >
+        <action
+            android:id="@+id/action_taskdetailsFragment2_to_addTaskFragment2"
+            app:destination="@id/addTaskFragment2"
+            app:popUpTo="@id/taskdetailsFragment2" />
+        <action
+            android:id="@+id/action_taskdetailsFragment2_to_updateTaskFragment"
+            app:destination="@id/updateTaskFragment"
+            app:popUpTo="@id/taskdetailsFragment2"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment2"
+        android:name="com.example.todo.addedtask.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" >
+        <action
+            android:id="@+id/action_addTaskFragment2_to_taskdetailsFragment2"
+            app:destination="@id/taskdetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTaskFragment"
+        android:name="com.example.todo.updatetask.UpdateTaskFragment"
+        android:label="fragment_update_task"
+        tools:layout="@layout/fragment_update_task" >
+        <action
+            android:id="@+id/action_updateTaskFragment_to_taskdetailsFragment2"
+            app:destination="@id/taskdetailsFragment2" />
+    </fragment>
+</navigation>

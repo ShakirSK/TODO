@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_tasks_image_content_description">No tasks image</string>
+
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Enter your task here.</string>
+    <string name="reminder">Reminder</string>
+    <string name="empty_task_message">Tasks cannot be empty</string>
+</resources>
